@@ -179,7 +179,7 @@ exports.playCmd = rl => {
 
 exports.creditsCmd = rl => {
     log('Autores de la práctica:');
-    log('Víctor García González', 'green');
+    log('VICTOR', 'green');
     rl.prompt();
 };
 

@@ -96,7 +96,7 @@ exports.addCmd = rl => {
            return models.quiz.create(quiz);
        })
        .then((quiz) => {
-           log(` ${colorize('Se ha añadido', 'magenta')}: ${quiz.question} $(colorize('=>', 'magenta')} ${quiz.answer}`);
+           log(` ${colorize('Se ha añadido', 'magenta')}: ${quiz.question} ${(colorize('=>', 'magenta'))} ${quiz.answer}`);
        })
        .catch(Sequelize.ValidationError, error => {
            errorlog('El quiz es erroneo:');
